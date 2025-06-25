@@ -1,0 +1,17 @@
+/* docs/css/custom.css */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.md-content h2 {
+    margin-top: 3em;
+    /* H2 위에 더 많은 여백 */
+    margin-bottom: 1em;
+    /* H2 아래에도 여백 */
+    padding-bottom: 0.2em;
+    /* 선택적으로 패딩 추가 */
+    border-bottom: 1px solid var(--md-code-bg-color);
+    /* 가벼운 밑줄 */
+}

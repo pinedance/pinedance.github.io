@@ -1,0 +1,53 @@
+.showcase-item {
+    display: flex;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.showcase-image {
+    flex: 0 0 40%;
+    margin-right: 2rem;
+}
+
+.showcase-image img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.showcase-content {
+    flex: 1;
+}
+
+.showcase-title {
+    margin-top: 0;
+    margin-bottom: 1.0rem;
+    font-size: 1.0rem;
+}
+
+.showcase-copyright {
+    font-size: 0.5rem;
+}
+
+.showcase-techstack {
+    font-size: 0.5rem;
+}
+
+/* 다크 모드 대응 */
+[data-md-color-scheme="slate"] .showcase-item {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 모바일 반응형 */
+@media screen and (max-width: 768px) {
+    .showcase-item {
+        flex-direction: column;
+    }
+
+    .showcase-image {
+        flex: 0 0 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
